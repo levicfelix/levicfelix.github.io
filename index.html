@@ -4,22 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Levi Felix's Homepage</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #555;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    .title-figure {
+      border: 2px dashed #aaa;
+      padding: 50px;
+      text-align: center;
+      color: #666;
+      margin: 30px 0;
+      background-color: #f8f8f8;
+    }
+
+    .profile {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .profile img {
+      max-width: 220px;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    .cv-link {
+      font-weight: bold;
+      color: #004080;
+      text-decoration: none;
+    }
+
+    .cv-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
+
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="research.html">Research</a> |
-    <a href="publications.html">Publications</a> |
+    <a href="index.html">Home</a>
+    <a href="levi-felix.html">Levi Felix</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
     <a href="awards.html">Awards</a>
   </nav>
 
-  <hr>
+  <main>
 
-  <h1>Levi Felix's Homepage</h1>
+    <h1>Levi Felix's Homepage</h1>
 
-  <p>
-    Welcome to my personal academic website.
-  </p>
+    <p class="subtitle">
+      Atomistic modeling of mechanics, thermal transport and degradation of materials
+    </p>
+
+    <div class="title-figure">
+      Figure placeholder: atomistic modeling of mechanics, thermal transport and degradation of materials
+    </div>
+
+    <p>
+      Many processes that control the performance and lifetime of materials occur at
+      atomic length scales and under conditions that are difficult to access directly
+      in experiments, such as extreme temperatures, high stresses, reactive environments,
+      or buried interfaces. Computational materials science provides a way to resolve
+      these mechanisms from the atomistic level, connecting structure, bonding, defects,
+      and chemical reactions to macroscopic properties such as strength, heat transport,
+      and degradation resistance.
+    </p>
+
+    <div class="profile">
+      <img src="images/levi_felix.jpg" alt="Levi Felix">
+
+      <a class="cv-link" href="files/Levi_Felix_CV.pdf" target="_blank">
+        Curriculum Vitae
+      </a>
+    </div>
+
+    <h2>Career</h2>
+
+    <p>
+      I am currently a Postdoctoral Research Associate in the
+      <a href="https://msne.rice.edu/" target="_blank">
+        Department of Materials Science and NanoEngineering
+      </a>
+      at Rice University, working in the
+      <a href="https://biygroup.blogs.rice.edu/members" target="_blank">
+        Yakobson Research Group
+      </a>.
+    </p>
+
+    <p>
+      My research career started during my Ph.D., where I used atomistic simulations
+      to study the mechanical behavior, fracture, impact response, thermal stability,
+      and thermal transport of low-dimensional and carbon-based materials. My first-author
+      work from this period includes studies on schwarzites, diamond schwarzites,
+      amorphous carbon, guided fracture in graphene structures, pentadiamond, and
+      thermal transport in knotted graphene nanoribbons.
+    </p>
+
+  </main>
+
 </body>
 </html>
