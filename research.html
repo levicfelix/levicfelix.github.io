@@ -2,23 +2,236 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    .topic {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 55px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 35px;
+    }
+
+    .topic-text {
+      flex: 2;
+    }
+
+    .topic-figure {
+      flex: 1;
+      text-align: center;
+    }
+
+    .topic-figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .topic h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .topic p {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    .references {
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+      padding-left: 18px;
+      margin-top: 10px;
+    }
+
+    .references li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 750px) {
+      .topic {
+        flex-direction: column;
+      }
+
+      .topic-figure {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
+
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="research.html">Research</a> |
-    <a href="publications.html">Publications</a> |
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
     <a href="awards.html">Awards</a>
   </nav>
 
-  <hr>
+  <main>
 
-  <h1>Research</h1>
+    <h1>Research</h1>
 
-  <p>
-    Add your research description here.
-  </p>
+    <section class="topic">
+      <div class="topic-text">
+        <h2>Thermal Decomposition of Energetic Materials</h2>
+
+        <p>
+          This research focuses on how surface morphology influences the low-temperature
+          sublimation and decomposition of ammonium perchlorate crystals. By combining
+          atomistic simulations and reaction pathway analysis, the goal is to understand
+          how flat surfaces, steps, kinks, corners, and other defects modify molecular
+          detachment, proton transfer, and the early stages of thermal degradation.
+        </p>
+
+        <ul class="references">
+          <li>Publication list to be added.</li>
+        </ul>
+      </div>
+
+      <div class="topic-figure">
+        <img src="images/research_ap.png" alt="Thermal decomposition of energetic materials">
+      </div>
+    </section>
+
+    <section class="topic">
+      <div class="topic-text">
+        <h2>Stress Corrosion Cracking</h2>
+
+        <p>
+          This work investigates how water interacts with strained metal-oxide surfaces
+          and crack-like environments, revealing atomistic mechanisms of bond breaking,
+          dissolution, and chemically assisted degradation. These simulations help connect
+          local chemical reactions at oxide surfaces to stress corrosion cracking and
+          long-term materials failure.
+        </p>
+
+        <ul class="references">
+          <li>
+            L. C. Felix, Q.-K. Li, E. S. Penev and B. I. Yakobson,
+            <em>Materials</em>, 18 (3), 538 (2025).
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic-figure">
+        <img src="images/research_stress_corrosion.png" alt="Stress corrosion cracking">
+      </div>
+    </section>
+
+    <section class="topic">
+      <div class="topic-text">
+        <h2>Thermal Transport at Nanoscale</h2>
+
+        <p>
+          This research explores how nanoscale geometry and topology can control heat
+          flow in low-dimensional materials. In knotted graphene nanoribbons, local
+          distortions introduce thermal resistance, producing temperature jumps similar
+          to Kapitza resistance and allowing heat transport to be tuned by mechanical
+          and structural design.
+        </p>
+
+        <ul class="references">
+          <li>
+            L. C. Felix, A. F. Fonseca and D. S. Galvao,
+            <em>arXiv</em>, 2208.01751 (2022).
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic-figure">
+        <img src="images/research_thermal_transport.png" alt="Thermal transport at nanoscale">
+      </div>
+    </section>
+
+    <section class="topic">
+      <div class="topic-text">
+        <h2>Mechanical Response of Carbon Nanomaterials</h2>
+
+        <p>
+          This research line focuses on the mechanical behavior of carbon-based
+          nanomaterials and architected carbon structures. Using density functional
+          theory, molecular dynamics, and multiscale modeling, these studies examined
+          how topology, porosity, defects, and structural design affect deformation,
+          fracture, impact resistance, energy absorption, and thermal stability.
+        </p>
+
+        <ul class="references">
+          <li>
+            L. C. Felix, C. F. Woellner and D. S. Galvao,
+            <em>Carbon</em>, 157, 670–680 (2020).
+          </li>
+
+          <li>
+            L. C. Felix, V. Gaál, C. F. Woellner, V. Rodrigues and D. S. Galvao,
+            <em>MRS Adv.</em>, 5 (33–34), 1775–1781 (2020).
+          </li>
+
+          <li>
+            L. C. Felix, R. M. Tromer, P. A. S. Autreto, L. A. Ribeiro Jr. and D. S. Galvao,
+            <em>J. Phys. Chem. C</em>, 124 (27), 14855–14860 (2020).
+          </li>
+
+          <li>
+            L. C. Felix and D. S. Galvao,
+            <em>Phys. Chem. Chem. Phys.</em>, 24 (22), 13905–13910 (2022).
+          </li>
+
+          <li>
+            L. C. Felix, R. M. Tromer, C. F. Woellner, C. S. Tiwary and D. S. Galvao,
+            <em>Physica B</em>, 629, 413576 (2022).
+          </li>
+
+          <li>
+            L. C. Felix, R. S. Ambekar, C. F. Woellner, B. Kushwaha, V. Pal,
+            C. S. Tiwary and D. S. Galvao,
+            <em>J. Phys. D: Appl. Phys.</em>, 55 (46), 465301 (2022).
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic-figure">
+        <img src="images/research_carbon_mechanics.png" alt="Mechanical response of carbon nanomaterials">
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
