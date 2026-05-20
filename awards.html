@@ -2,10 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Awards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awards - Levi Felix</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    .award-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    .award {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .year {
+      font-weight: bold;
+      color: #004080;
+      font-size: 18px;
+      margin-right: 8px;
+    }
+
+    .award-text {
+      font-size: 16px;
+    }
+  </style>
 </head>
 
 <body>
+
   <nav>
     <a href="index.html">Home</a> |
     <a href="research.html">Research</a> |
@@ -13,12 +70,42 @@
     <a href="awards.html">Awards</a>
   </nav>
 
-  <hr>
+  <main>
 
-  <h1>Awards</h1>
+    <h1>Awards</h1>
 
-  <p>
-    Add awards and honors here.
-  </p>
+    <ul class="award-list">
+
+      <li class="award">
+        <span class="year">2022</span>
+        <span class="award-text">
+          Recognition Award from NIST for oral presentation on Symposium DS02:
+          Advanced Manufactured Materials—Innovative Experiments, Computational
+          Modeling and Applications at MRS Spring Meeting 2022 in Honolulu-HI,
+          United States.
+        </span>
+      </li>
+
+      <li class="award">
+        <span class="year">2021</span>
+        <span class="award-text">
+          Best Poster Award on Symposium EQ20: Beyond Graphene 2D Materials
+          Synthesis, Properties and Device Applications at MRS Fall Meeting 2021
+          in Boston-MA, United States.
+        </span>
+      </li>
+
+      <li class="award">
+        <span class="year">2016</span>
+        <span class="award-text">
+          Magna Cum Laude on Bachelor of Physics at Federal University of Ceará
+          in Fortaleza-CE, Brazil.
+        </span>
+      </li>
+
+    </ul>
+
+  </main>
+
 </body>
 </html>
