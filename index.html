@@ -1,146 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Levi Felix's Homepage</title>
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-    }
-
-    nav {
-      margin-bottom: 30px;
-      font-size: 16px;
-    }
-
-    nav a {
-      margin-right: 18px;
-      text-decoration: none;
-      color: #004080;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      color: #555;
-      margin-top: 0;
-      margin-bottom: 30px;
-    }
-
-    .title-figure {
-      text-align: center;
-      margin: 30px 0;
-    }
-    
-    .title-figure img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .profile {
-      margin-top: 35px;
-      text-align: center;
-    }
-
-    .profile img {
-      max-width: 220px;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto 15px auto;
-    }
-
-    .cv-link {
-      font-weight: bold;
-      color: #004080;
-      text-decoration: none;
-    }
-
-    .cv-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Levi Felix — theory and atomistic simulations of mechanical and chemical degradation of materials.">
+  <meta name="theme-color" content="#18181a">
+  <title>Levi Felix | Computational Materials Science</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="awards.html">Awards</a>
-  </nav>
+  <section class="hero" id="home" data-section="home" aria-label="Featured research">
+    <div class="carousel" aria-roledescription="carousel" aria-label="Research highlights">
+      <div class="carousel-track">
+        <article class="slide is-active" data-slide="0" aria-hidden="false">
+          <img src="images/1.fracture.png" alt="Atomistic model illustrating fracture in a carbon structure">
+          <div class="slide-shade"></div>
+          <div class="slide-caption">
+            <span class="eyebrow">01 / Mechanics</span>
+            <h1>Fracture</h1>
+            <p>Resolving how materials fail, bond by bond.</p>
+          </div>
+        </article>
 
-  <main>
+        <article class="slide" data-slide="1" aria-hidden="true">
+          <img src="images/2.dissolution.png" alt="Atomistic simulations of oxide dissolution in water">
+          <div class="slide-shade"></div>
+          <div class="slide-caption">
+            <span class="eyebrow">02 / Chemistry</span>
+            <h2>Dissolution</h2>
+            <p>Following reactive interfaces at atomic resolution.</p>
+          </div>
+        </article>
 
-    <h1>Levi Felix's Homepage</h1>
+        <article class="slide" data-slide="2" aria-hidden="true">
+          <img src="images/3.sublimation.png" alt="Molecular model illustrating crystal-surface sublimation">
+          <div class="slide-shade"></div>
+          <div class="slide-caption">
+            <span class="eyebrow">03 / Degradation</span>
+            <h2>Sublimation</h2>
+            <p>Connecting surface morphology to molecular escape.</p>
+          </div>
+        </article>
+      </div>
 
-    <p class="subtitle">
-      Theory and atomistic simulations of mechanical and chemical degradation of materials
-    </p>
+      <button class="carousel-control carousel-control--prev" type="button" aria-label="Show previous image">
+        <span aria-hidden="true">&#8592;</span>
+      </button>
+      <button class="carousel-control carousel-control--next" type="button" aria-label="Show next image">
+        <span aria-hidden="true">&#8594;</span>
+      </button>
 
-    <div class="title-figure">
-      <img src="images/drawing.png" alt="Atomistic modeling of mechanics, thermal transport and degradation of materials">
-    </div>
+      <div class="carousel-dots" role="group" aria-label="Choose a featured image">
+        <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Show fracture image" aria-current="true"></button>
+        <button class="carousel-dot" type="button" data-slide-to="1" aria-label="Show dissolution image"></button>
+        <button class="carousel-dot" type="button" data-slide-to="2" aria-label="Show sublimation image"></button>
+      </div>
 
-    <p>
-      Many processes that control the performance and lifetime of materials occur at
-      atomic length scales and under conditions that are difficult to access directly
-      in experiments, such as extreme temperatures, high stresses, reactive environments,
-      or buried interfaces. Computational materials science provides a way to resolve
-      these mechanisms from the atomistic level, connecting structure, bonding, defects,
-      and chemical reactions to macroscopic properties such as strength, heat transport,
-      and degradation resistance.
-    </p>
-
-    <div class="profile">
-      <img src="images/levi_felix.jpeg" alt="Levi Felix">
-
-      <a class="cv-link" href="files/Curriculum_Vitae.pdf" target="_blank">
-        Curriculum Vitae
+      <a class="scroll-cue" href="#about" aria-label="Scroll to the introduction">
+        <span>Explore</span>
+        <span aria-hidden="true">&#8595;</span>
       </a>
     </div>
+  </section>
 
-    <p>
-      I am currently a Postdoctoral Research Associate in the
-      <a href="https://msne.rice.edu/" target="_blank">
-        Department of Materials Science and NanoEngineering
-      </a>
-      at Rice University.
-      </a>.
-    </p>
+  <header class="site-header" id="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="site-name" href="#home">Levi Felix</a>
+      <div class="nav-links">
+        <a class="nav-link is-active" href="#home" data-nav="home" aria-current="page">Home</a>
+        <a class="nav-link" href="#research" data-nav="research">Research</a>
+        <a class="nav-link" href="#publications" data-nav="publications">Publications</a>
+        <a class="nav-link" href="#awards" data-nav="awards">Awards</a>
+      </div>
+    </nav>
+  </header>
 
-    <p>
-      Currently my focus is on enhanced sampling molecular dynamics (MD)
-      (such as metadynamics and umbrella sampling) to investigate degradation of materials
-      that occur on a longer timescale that is currently inaccessible by 
-      usual (unbiased) MD simulations.
-    </p>
+  <main id="main-content">
+    <section class="section section--intro" id="about" data-section="home">
+      <div class="section-shell intro-grid">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <p class="kicker">About</p>
+          <h2>Levi Felix's Homepage</h2>
+          <p class="section-lead">Theory and atomistic simulations of mechanical and chemical degradation of materials</p>
+        </div>
 
+        <div class="intro-copy">
+          <p class="opening-copy">
+            Many processes that control the performance and lifetime of materials occur at
+            atomic length scales and under conditions that are difficult to access directly
+            in experiments, such as extreme temperatures, high stresses, reactive environments,
+            or buried interfaces. Computational materials science provides a way to resolve
+            these mechanisms from the atomistic level, connecting structure, bonding, defects,
+            and chemical reactions to macroscopic properties such as strength, heat transport,
+            and degradation resistance.
+          </p>
+
+          <p>
+            I am currently a Postdoctoral Research Associate in the
+            <a href="https://msne.rice.edu/" target="_blank" rel="noopener noreferrer">Department of Materials Science and NanoEngineering</a>
+            at Rice University.
+          </p>
+
+          <p>
+            Currently my focus is on enhanced sampling molecular dynamics (MD)
+            (such as metadynamics and umbrella sampling) to investigate degradation of materials
+            that occur on a longer timescale that is currently inaccessible by
+            usual (unbiased) MD simulations.
+          </p>
+        </div>
+
+        <aside class="profile-card" aria-label="Levi Felix profile">
+          <img src="images/levi_felix.jpeg" alt="Portrait of Levi Felix">
+          <div class="profile-card__body">
+            <p class="profile-name">Levi Felix</p>
+            <p>Postdoctoral Research Associate<br>Rice University</p>
+            <a class="button-link" href="files/Curriculum_Vitae.pdf" target="_blank" rel="noopener noreferrer">
+              Curriculum Vitae <span aria-hidden="true">&#8599;</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--research" id="research" data-section="research">
+      <div class="section-shell">
+        <header class="section-heading section-heading--wide">
+          <span class="section-number">02</span>
+          <p class="kicker">Research</p>
+          <h2>Mechanisms across scales</h2>
+        </header>
+
+        <article class="research-feature">
+          <div class="research-feature__image">
+            <img src="images/ap_topochemistry.jpeg" alt="Ammonium perchlorate sublimation">
+            <span class="image-label">Chemical degradation</span>
+          </div>
+          <div class="research-feature__copy">
+            <h3>Atomistic Materials Degradation</h3>
+            <p>
+              This research aims to connect quantum chemical calculations and transition state theory to identify
+              the rate-limiting steps of many observed chemical degradatin processes, such as water-driven stress corrosion craking
+              and thermal decomposition and sublimation multi-component perchlorate crystals. Additionally, first-principles and
+              density functional tight-binding calculations combined with metadynamics are used to investigate such
+              rare events at the atomic scale.
+            </p>
+            <ul class="reference-list">
+              <li>L. C. Felix, E. S. Penev, M. Sun and B. I. Yakobson, <em>J. Phys. Chem. Lett.</em>, XXXX, XXX, XXX-XXX (2026).</li>
+              <li>L. C. Felix, Q.-K. Li, E. S. Penev, and B. I. Yakobson, <em>Materials</em>, 18(3), 538 (2025).</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-feature research-feature--reverse">
+          <div class="research-feature__image">
+            <img src="images/carbon_mechanics.jpg" alt="Mechanical response of carbon nanomaterials">
+            <span class="image-label">Carbon mechanics</span>
+          </div>
+          <div class="research-feature__copy">
+            <h3>Mechanical Response of Carbon Nanomaterials</h3>
+            <p>
+              My earlier research focused on the mechanical response of carbon nanomaterials
+              and architected carbon structures. These studies combined density functional
+              theory, molecular dynamics, and mechanical modeling to understand deformation,
+              fracture, thermal stability, impact response, and energy absorption from the
+              atomistic to the macroscale.
+            </p>
+            <ul class="reference-list">
+              <li>L. C. Felix, C. F. Woellner, and D. S. Galvao, <em>Carbon</em>, 157, 670–680 (2020).</li>
+              <li>L. C. Felix, V. Gaál, C. F. Woellner, V. Rodrigues, and D. S. Galvao, <em>MRS Adv.</em>, 5(33–34), 1775–1781 (2020).</li>
+              <li>L. C. Felix, R. M. Tromer, P. A. S. Autreto, L. A. Ribeiro Junior, and D. S. Galvao, <em>J. Phys. Chem. C</em>, 124(27), 14855–14860 (2020).</li>
+              <li>L. C. Felix and D. S. Galvao, <em>Phys. Chem. Chem. Phys.</em>, 24(22), 13905–13910 (2022).</li>
+              <li>L. C. Felix, R. M. Tromer, C. F. Woellner, C. S. Tiwary, and D. S. Galvao, <em>Physica B Condens. Matter</em>, 629, 413576 (2022).</li>
+              <li>L. C. Felix, R. S. Ambekar, C. F. Woellner, B. Kushwaha, V. Pal, C. S. Tiwary, and D. S. Galvao, <em>J. Phys. D: Appl. Phys.</em>, 55(46), 465301 (2022).</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--publications" id="publications" data-section="publications">
+      <div class="section-shell">
+        <header class="section-heading section-heading--publications">
+          <div>
+            <span class="section-number">03</span>
+            <p class="kicker">Publications</p>
+            <h2>Selected work</h2>
+          </div>
+          <a class="button-link" href="https://scholar.google.com/citations?hl=en&amp;user=JUf7yesAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
+            Google Scholar <span aria-hidden="true">&#8599;</span>
+          </a>
+        </header>
+
+        <ol class="publication-list">
+          <li class="publication">
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, E. S. Penev, M. Sun, B. I. Yakobson</p>
+              <p class="journal">The Journal of Physical Chemistry Letters (2026) <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>Kapitza resistance and thermal transport in knotted graphene nanoribbons</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, M. L. Pereira Junior, G. S. L. Fabris, A. F. F., D. S. Galvão</p>
+              <p class="journal">Applied Surface Science 742, 167187 (2026) <a href="https://doi.org/10.1016/j.apsusc.2026.167187" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2025</span>
+            <div>
+              <h3>Schwarzites and triply periodic minimal surfaces: from pure topology mathematics to macroscale applications</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, R. Ambekar, R. M. Tromer, C. F. Woellner, V. Rodrigues, P. M. Ajayan, ...</p>
+              <p class="journal">Small 21(28), 2400351 (2025) <a href="https://doi.org/10.1002/smll.202400351" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2025</span>
+            <div>
+              <h3>Ab Initio Molecular Dynamics Insights into Stress Corrosion Cracking and Dissolution of Metal Oxides</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, Q. K. Li, E. S. Penev, B. I. Yakobson</p>
+              <p class="journal">Materials 18(3), 538 (2025) <a href="https://doi.org/10.3390/ma18030538" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2024</span>
+            <div>
+              <h3>Transforming Two-Dimensional Carbon Allotropes into Three-Dimensional Ones through Topological Mapping: The Case of Biphenylene Carbon (Graphenylene)</h3>
+              <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, R. H. Baughmann, D. S. Galvao, C. F. Woellner</p>
+              <p class="journal">The Journal of Physical Chemistry A 128(35), 7346-7352 (2024) <a href="https://doi.org/10.1021/acs.jpca.4c01339" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2024</span>
+            <div>
+              <h3>Atomic-resolution vibrational mapping of bilayer borophene</h3>
+              <p class="authors">H. Li, <strong>L. C. Felix</strong>, Q. Li, Q. Ruan, B. I. Yakobson, M. C. Hersam</p>
+              <p class="journal">Nano Letters 24(34), 10674-10680 (2024) <a href="https://doi.org/10.1021/acs.nanolett.4c03224" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2024</span>
+            <div>
+              <h3>Hydrogen atom/molecule adsorption on 2D metallic porphyrin: A first-principles study</h3>
+              <p class="authors">R. M. Tromer, I. M. Felix, <strong>L. C. Felix</strong>, L. D. Machado, C. F. Woellner, D. S. Galvao</p>
+              <p class="journal">Chemical Physics 577, 112142 (2024) <a href="https://doi.org/10.1016/j.chemphys.2023.112142" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2023</span>
+            <div>
+              <h3>Influence of cluster sources on the growth mechanisms and chemical composition of bimetallic nanoparticles</h3>
+              <p class="authors">M. Moreira, <strong>L. C. Felix</strong>, E. Cottancin, M. Pellarin, D. Ugarte, M. Hillenkamp, ...</p>
+              <p class="journal">The Journal of Physical Chemistry C 127(4), 1944-1954 (2023) <a href="https://doi.org/10.1021/acs.jpcc.2c08044" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2022</span>
+            <div>
+              <h3>The role of the extrafibrillar volume on the mechanical properties of molecular models of mineralized bone microfibrils</h3>
+              <p class="authors">A. C. S. de Alcântara, <strong>L. C. Felix</strong>, D. S. Galvao, P. Sollero, M. S. Skaf</p>
+              <p class="journal">ACS Biomaterials Science &amp; Engineering 9(1), 230-245 (2022) <a href="https://doi.org/10.1021/acsbiomaterials.2c00728" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2022</span>
+            <div>
+              <h3>Mechanical properties of 3D-printed pentadiamond</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, R. S. Ambekar, C. F. Woellner, B. Kushwaha, V. Pal, C. S. Tiwary, ...</p>
+              <p class="journal">Journal of Physics D: Applied Physics 55(46), 465301 (2022) <a href="https://iopscience.iop.org/article/10.1088/1361-6463/ac91dc/meta" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2022</span>
+            <div>
+              <h3>Devising bone molecular models at the nanoscale: from usual mineralized collagen fibrils to the first bone fibers including hydroxyapatite in the extra-fibrillar volume</h3>
+              <p class="authors">A. C. S. Alcântara, <strong>L. C. Felix</strong>, D. S. Galvão, P. Sollero, M. S. Skaf</p>
+              <p class="journal">Materials 15(6), 2274 (2022) <a href="https://doi.org/10.3390/ma15062274" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2022</span>
+            <div>
+              <h3>Mechanical response of pentadiamond: A DFT and molecular dynamics study</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, R. M. Tromer, C. F. Woellner, C. S. Tiwary, D. S. Galvao</p>
+              <p class="journal">Physica B: Condensed Matter 629, 413576 (2022) <a href="https://doi.org/10.1016/j.physb.2021.413576" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2022</span>
+            <div>
+              <h3>Mechanical properties of 3D printed macroscopic models of schwarzites</h3>
+              <p class="authors">V. Gaal, <strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao, C. S. Tiwary, M. A. d'Ávila, ...</p>
+              <p class="journal">Nano Select 3(2), 450-458 (2022) <a href="https://doi.org/10.1002/nano.202100147" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2022</span>
+            <div>
+              <h3>Guided fractures in graphene mechanical diode-like structures</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, D. S. Galvao</p>
+              <p class="journal">Physical Chemistry Chemical Physics 24(22), 13905-13910 (2022) <a href="https://doi.org/10.1039/D2CP01207C" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2021</span>
+            <div>
+              <h3>Optoelectronic properties of amorphous carbon-based nanotube and nanoscroll</h3>
+              <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, L. A. Ribeiro, D. S. Galvao</p>
+              <p class="journal">Physica E: Low-dimensional Systems and Nanostructures 130, 114683 (2021) <a href="https://doi.org/10.1016/j.physe.2021.114683" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2021</span>
+            <div>
+              <h3>A DFT investigation of the electronic, optical, and thermoelectric properties of pentadiamond</h3>
+              <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao</p>
+              <p class="journal">Chemical Physics Letters 763, 138210 (2021) <a href="https://doi.org/10.1016/j.cplett.2020.138210" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2020</span>
+            <div>
+              <h3>Electronic and transport properties of anisotropic semiconductor quantum wires</h3>
+              <p class="authors">S. M. Cunha, D. R. da Costa, <strong>L. C. Felix</strong>, A. Chaves, J. M. Pereira Jr</p>
+              <p class="journal">Physical Review B 102(4), 045427 (2020) <a href="https://doi.org/10.1103/PhysRevB.102.045427" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2020</span>
+            <div>
+              <h3>On the mechanical properties and thermal stability of a recently synthesized monolayer amorphous carbon</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, R. M. Tromer, P. A. S. Autreto, L. A. Ribeiro Junior, D. S. Galvao</p>
+              <p class="journal">The Journal of Physical Chemistry C 124(27), 14855-14860 (2020) <a href="https://doi.org/10.1021/acs.jpcc.0c02999" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2020</span>
+            <div>
+              <h3>On the structural stability and optical properties of germanium-based schwarzites: a density functional theory investigation</h3>
+              <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao</p>
+              <p class="journal">Physical Chemistry Chemical Physics 22(28), 16286-16293 (2020) <a href="https://doi.org/10.1039/D0CP02143A" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2020</span>
+            <div>
+              <h3>Mechanical properties of diamond schwarzites: from atomistic models to 3D-printed structures</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, V. Gaál, C. F. Woellner, V. Rodrigues, D. S. Galvao</p>
+              <p class="journal">MRS Advances 5(33-34), 1775-1781 (2020) <a href="https://doi.org/10.1557/adv.2020.175" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2020</span>
+            <div>
+              <h3>Mechanical and energy-absorption properties of schwarzites</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao</p>
+              <p class="journal">Carbon 157, 670-680 (2020) <a href="https://doi.org/10.1016/j.carbon.2019.10.066" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--awards" id="awards" data-section="awards">
+      <div class="section-shell awards-layout">
+        <header class="section-heading">
+          <span class="section-number">04</span>
+          <p class="kicker">Awards</p>
+          <h2>Recognition</h2>
+        </header>
+
+        <ol class="award-list">
+          <li class="award">
+            <span class="award-year">2022</span>
+            <p>Recognition Award from NIST for oral presentation on Symposium DS02: Advanced Manufactured Materials—Innovative Experiments, Computational Modeling and Applications at MRS Spring Meeting 2022 in Honolulu-HI, United States.</p>
+          </li>
+          <li class="award">
+            <span class="award-year">2021</span>
+            <p>Best Poster Award on Symposium EQ20: Beyond Graphene 2D Materials Synthesis, Properties and Device Applications at MRS Fall Meeting 2021 in Boston-MA, United States.</p>
+          </li>
+          <li class="award">
+            <span class="award-year">2016</span>
+            <p>Magna Cum Laude on Bachelor of Physics at Federal University of Ceará in Fortaleza-CE, Brazil.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <p>Levi Felix</p>
+      <a href="#home">Back to top <span aria-hidden="true">&#8593;</span></a>
+    </div>
+  </footer>
 </body>
 </html>
