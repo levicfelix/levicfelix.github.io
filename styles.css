@@ -240,6 +240,11 @@ a {
   text-shadow: 0 2px 16px #000;
 }
 
+.slide[data-slide="0"] .slide-caption p {
+  font-size: clamp(1.84rem, 3.1vw, 2.56rem);
+  line-height: 1.2;
+}
+
 .slide-citation {
   display: block;
   margin-top: 0.24rem;
@@ -421,7 +426,7 @@ a {
 
 .intro-grid {
   display: grid;
-  grid-template-columns: minmax(240px, 0.72fr) minmax(360px, 1.6fr);
+  grid-template-columns: minmax(220px, 0.68fr) minmax(360px, 1.6fr);
   gap: clamp(2rem, 5vw, 5.5rem);
   align-items: start;
 }
@@ -435,48 +440,157 @@ a {
   margin: 0 0 1.4rem;
 }
 
-.opening-copy::first-letter {
-  float: left;
-  margin: 0.08em 0.1em 0 0;
+.intro-copy strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.intro-heading {
+  display: flex;
+  margin-bottom: 1.8rem;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.intro-heading__icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(143, 174, 221, 0.28);
+  border-radius: 50%;
+  background: rgba(143, 174, 221, 0.1);
   color: var(--accent);
-  font-family: var(--heading);
-  font-size: 4.5em;
-  line-height: 0.75;
+  place-items: center;
+}
+
+.intro-heading__icon svg {
+  width: 26px;
+  height: 26px;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.3;
+}
+
+.intro-heading__icon circle {
+  fill: currentColor;
+  stroke: none;
+}
+
+.section .intro-heading h2 {
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 .profile-card {
-  overflow: hidden;
-  width: min(100%, 340px);
-  margin-top: 0;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--bg-raised);
+  display: flex;
+  width: min(100%, 300px);
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .profile-card img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
+  width: 227px;
+  height: 227px;
+  border: 4px solid rgba(255, 255, 255, 0.88);
+  border-radius: 50%;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.42);
   object-fit: cover;
-  object-position: center top;
-  filter: grayscale(12%);
+  object-position: center 30%;
+  filter: grayscale(8%);
 }
 
 .profile-card__body {
-  padding: 1.35rem;
+  width: 100%;
+  padding: 1.35rem 0 0;
 }
 
 .profile-card__body p {
-  margin: 0 0 1rem;
+  margin: 0;
   color: var(--muted);
   font-size: 0.94rem;
   line-height: 1.5;
 }
 
 .profile-card__body .profile-name {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
   color: var(--text);
   font-family: var(--heading);
-  font-size: 1.35rem;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profile-card__body .profile-pronouns {
+  margin-bottom: 0.75rem;
+  color: #8d98a8;
+  font-size: 0.88rem;
+}
+
+.profile-card__body .profile-role {
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.profile-affiliation {
+  color: #d4d9e1;
+  font-size: 0.98rem;
+  text-decoration: none;
+}
+
+.profile-affiliation:hover {
+  color: var(--accent-strong);
+}
+
+.profile-links {
+  display: flex;
+  margin-top: 1.4rem;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.profile-link {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  background: var(--bg-soft);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+  color: #b9c1cd;
+  place-items: center;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.profile-link svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
+.profile-link:hover {
+  border-color: rgba(143, 174, 221, 0.5);
+  background: #2a3039;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.34);
+  color: var(--accent-strong);
+  transform: translateY(-3px) scale(1.06);
+}
+
+.profile-link--orcid svg {
+  width: 23px;
+  height: 23px;
+}
+
+.profile-link--cv svg {
+  width: 22px;
+  height: 22px;
 }
 
 .button-link {
@@ -818,7 +932,8 @@ a {
   }
 
   .profile-card {
-    max-width: 360px;
+    max-width: 300px;
+    margin-bottom: 1.25rem;
   }
 
   .section-heading--publications {
