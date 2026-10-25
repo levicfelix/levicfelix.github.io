@@ -32,35 +32,41 @@
   <section class="hero" id="home" data-section="home" aria-label="Featured research">
     <div class="carousel" aria-roledescription="carousel" aria-label="Research highlights">
       <div class="carousel-track">
-        <article class="slide is-active" data-slide="0" aria-hidden="false">
+        <a class="slide is-active" data-slide="0" href="#research" aria-label="Go to the Research section" aria-hidden="false">
+          <div class="slide-backdrop" style="background-image: url('images/1.fracture.png')" aria-hidden="true"></div>
           <img src="images/1.fracture.png" alt="Atomistic model illustrating fracture in a carbon structure">
           <div class="slide-shade"></div>
           <div class="slide-caption">
-            <p>Computational Materials Science &middot; Nanomechanics &middot; Atomistic Materials Degradation &middot; Thermal Transport</p>
+            <p>
+              Theoretical and Computational Materials Science
+              <span class="slide-citation">Nanomechanics &middot; Atomistic Materials Degradation &middot; Thermal Transport</span>
+            </p>
           </div>
-        </article>
+        </a>
 
-        <article class="slide" data-slide="1" aria-hidden="true">
+        <a class="slide" data-slide="1" href="https://doi.org/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer" aria-label="Open the Topochemistry of Ammonium Perchlorate publication" aria-hidden="true" tabindex="-1">
+          <div class="slide-backdrop" style="background-image: url('images/3.sublimation.png')" aria-hidden="true"></div>
           <img src="images/3.sublimation.png" alt="Molecular model illustrating crystal-surface sublimation">
           <div class="slide-shade"></div>
           <div class="slide-caption">
             <p>
               Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation
-              <span class="slide-citation">(The Journal of Physical Chemistry Letters 17(31), 9031–9037, 2026)</span>
+              <span class="slide-citation">The Journal of Physical Chemistry Letters 17(31), 9031–9037, 2026</span>
             </p>
           </div>
-        </article>
+        </a>
 
-        <article class="slide" data-slide="2" aria-hidden="true">
+        <a class="slide" data-slide="2" href="https://doi.org/10.3390/ma18030538" target="_blank" rel="noopener noreferrer" aria-label="Open the stress corrosion cracking and dissolution publication" aria-hidden="true" tabindex="-1">
+          <div class="slide-backdrop" style="background-image: url('images/2.dissolution.png')" aria-hidden="true"></div>
           <img src="images/2.dissolution.png" alt="Atomistic simulations of oxide dissolution in water">
           <div class="slide-shade"></div>
           <div class="slide-caption">
             <p>
               Ab Initio Molecular Dynamics Insights into Stress Corrosion Cracking and Dissolution of Metal Oxides
-              <span class="slide-citation">(Materials 18(3), 538, 2025)</span>
+              <span class="slide-citation">Materials 18(3), 538, 2025</span>
             </p>
           </div>
-        </article>
+        </a>
       </div>
 
       <button class="carousel-control carousel-control--prev" type="button" aria-label="Show previous image">
@@ -79,12 +85,18 @@
   </section>
     <section class="section section--intro" id="about" data-section="home">
       <div class="section-shell intro-grid">
-        <div class="section-heading">
-          <span class="section-number">01</span>
-          <p class="kicker">About</p>
-          <h1>Levi Felix's Homepage</h1>
-          <p class="section-lead">Theory and atomistic simulations of mechanical and chemical degradation of materials</p>
-        </div>
+        <h1 class="visually-hidden">Levi Felix's Homepage</h1>
+
+        <aside class="profile-card" aria-label="Levi Felix profile">
+          <img src="images/levi_felix.jpeg" alt="Portrait of Levi Felix">
+          <div class="profile-card__body">
+            <p class="profile-name">Levi Felix</p>
+            <p>Postdoctoral Research Associate<br>Rice University</p>
+            <a class="button-link" href="files/Curriculum_Vitae.pdf" target="_blank" rel="noopener noreferrer">
+              Curriculum Vitae <span aria-hidden="true">&#8599;</span>
+            </a>
+          </div>
+        </aside>
 
         <div class="intro-copy">
           <p class="opening-copy">
@@ -110,17 +122,6 @@
             usual (unbiased) MD simulations.
           </p>
         </div>
-
-        <aside class="profile-card" aria-label="Levi Felix profile">
-          <img src="images/levi_felix.jpeg" alt="Portrait of Levi Felix">
-          <div class="profile-card__body">
-            <p class="profile-name">Levi Felix</p>
-            <p>Postdoctoral Research Associate<br>Rice University</p>
-            <a class="button-link" href="files/Curriculum_Vitae.pdf" target="_blank" rel="noopener noreferrer">
-              Curriculum Vitae <span aria-hidden="true">&#8599;</span>
-            </a>
-          </div>
-        </aside>
       </div>
     </section>
 

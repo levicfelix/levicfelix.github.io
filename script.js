@@ -25,6 +25,7 @@
       const isActive = slideIndex === activeSlide;
       slide.classList.toggle("is-active", isActive);
       slide.setAttribute("aria-hidden", String(!isActive));
+      slide.tabIndex = isActive ? 0 : -1;
     });
 
     dots.forEach((dot, dotIndex) => {
