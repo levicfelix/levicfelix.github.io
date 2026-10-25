@@ -14,7 +14,7 @@
   const startRotation = () => {
     stopRotation();
     if (!reducedMotion.matches && document.visibilityState === "visible") {
-      rotationTimer = window.setInterval(() => showSlide(activeSlide + 1, false), 6000);
+      rotationTimer = window.setInterval(() => showSlide(activeSlide + 1, false), 5000);
     }
   };
 

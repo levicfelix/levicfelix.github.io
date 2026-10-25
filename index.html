@@ -16,60 +16,6 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <section class="hero" id="home" data-section="home" aria-label="Featured research">
-    <div class="carousel" aria-roledescription="carousel" aria-label="Research highlights">
-      <div class="carousel-track">
-        <article class="slide is-active" data-slide="0" aria-hidden="false">
-          <img src="images/1.fracture.png" alt="Atomistic model illustrating fracture in a carbon structure">
-          <div class="slide-shade"></div>
-          <div class="slide-caption">
-            <span class="eyebrow">01 / Mechanics</span>
-            <h1>Fracture</h1>
-            <p>Resolving how materials fail, bond by bond.</p>
-          </div>
-        </article>
-
-        <article class="slide" data-slide="1" aria-hidden="true">
-          <img src="images/2.dissolution.png" alt="Atomistic simulations of oxide dissolution in water">
-          <div class="slide-shade"></div>
-          <div class="slide-caption">
-            <span class="eyebrow">02 / Chemistry</span>
-            <h2>Dissolution</h2>
-            <p>Following reactive interfaces at atomic resolution.</p>
-          </div>
-        </article>
-
-        <article class="slide" data-slide="2" aria-hidden="true">
-          <img src="images/3.sublimation.png" alt="Molecular model illustrating crystal-surface sublimation">
-          <div class="slide-shade"></div>
-          <div class="slide-caption">
-            <span class="eyebrow">03 / Degradation</span>
-            <h2>Sublimation</h2>
-            <p>Connecting surface morphology to molecular escape.</p>
-          </div>
-        </article>
-      </div>
-
-      <button class="carousel-control carousel-control--prev" type="button" aria-label="Show previous image">
-        <span aria-hidden="true">&#8592;</span>
-      </button>
-      <button class="carousel-control carousel-control--next" type="button" aria-label="Show next image">
-        <span aria-hidden="true">&#8594;</span>
-      </button>
-
-      <div class="carousel-dots" role="group" aria-label="Choose a featured image">
-        <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Show fracture image" aria-current="true"></button>
-        <button class="carousel-dot" type="button" data-slide-to="1" aria-label="Show dissolution image"></button>
-        <button class="carousel-dot" type="button" data-slide-to="2" aria-label="Show sublimation image"></button>
-      </div>
-
-      <a class="scroll-cue" href="#about" aria-label="Scroll to the introduction">
-        <span>Explore</span>
-        <span aria-hidden="true">&#8595;</span>
-      </a>
-    </div>
-  </section>
-
   <header class="site-header" id="site-header">
     <nav class="site-nav" aria-label="Main navigation">
       <a class="site-name" href="#home">Levi Felix</a>
@@ -83,12 +29,60 @@
   </header>
 
   <main id="main-content">
+  <section class="hero" id="home" data-section="home" aria-label="Featured research">
+    <div class="carousel" aria-roledescription="carousel" aria-label="Research highlights">
+      <div class="carousel-track">
+        <article class="slide is-active" data-slide="0" aria-hidden="false">
+          <img src="images/1.fracture.png" alt="Atomistic model illustrating fracture in a carbon structure">
+          <div class="slide-shade"></div>
+          <div class="slide-caption">
+            <p>Computational Materials Science &middot; Nanomechanics &middot; Atomistic Materials Degradation &middot; Thermal Transport</p>
+          </div>
+        </article>
+
+        <article class="slide" data-slide="1" aria-hidden="true">
+          <img src="images/3.sublimation.png" alt="Molecular model illustrating crystal-surface sublimation">
+          <div class="slide-shade"></div>
+          <div class="slide-caption">
+            <p>
+              Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation
+              <span class="slide-citation">(The Journal of Physical Chemistry Letters 17(31), 9031–9037, 2026)</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="slide" data-slide="2" aria-hidden="true">
+          <img src="images/2.dissolution.png" alt="Atomistic simulations of oxide dissolution in water">
+          <div class="slide-shade"></div>
+          <div class="slide-caption">
+            <p>
+              Ab Initio Molecular Dynamics Insights into Stress Corrosion Cracking and Dissolution of Metal Oxides
+              <span class="slide-citation">(Materials 18(3), 538, 2025)</span>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <button class="carousel-control carousel-control--prev" type="button" aria-label="Show previous image">
+        <span aria-hidden="true">&#8592;</span>
+      </button>
+      <button class="carousel-control carousel-control--next" type="button" aria-label="Show next image">
+        <span aria-hidden="true">&#8594;</span>
+      </button>
+
+      <div class="carousel-dots" role="group" aria-label="Choose a featured image">
+        <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Show fracture image" aria-current="true"></button>
+        <button class="carousel-dot" type="button" data-slide-to="1" aria-label="Show sublimation publication"></button>
+        <button class="carousel-dot" type="button" data-slide-to="2" aria-label="Show dissolution publication"></button>
+      </div>
+    </div>
+  </section>
     <section class="section section--intro" id="about" data-section="home">
       <div class="section-shell intro-grid">
         <div class="section-heading">
           <span class="section-number">01</span>
           <p class="kicker">About</p>
-          <h2>Levi Felix's Homepage</h2>
+          <h1>Levi Felix's Homepage</h1>
           <p class="section-lead">Theory and atomistic simulations of mechanical and chemical degradation of materials</p>
         </div>
 
@@ -153,7 +147,7 @@
               rare events at the atomic scale.
             </p>
             <ul class="reference-list">
-              <li>L. C. Felix, E. S. Penev, M. Sun and B. I. Yakobson, <em>J. Phys. Chem. Lett.</em>, XXXX, XXX, XXX-XXX (2026).</li>
+              <li>L. C. Felix, E. S. Penev, M. Sun and B. I. Yakobson, <em>The Journal of Physical Chemistry Letters</em>, 17(31), 9031–9037 (2026).</li>
               <li>L. C. Felix, Q.-K. Li, E. S. Penev, and B. I. Yakobson, <em>Materials</em>, 18(3), 538 (2025).</li>
             </ul>
           </div>
@@ -205,7 +199,7 @@
             <div>
               <h3>Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation</h3>
               <p class="authors"><strong>L. C. Felix</strong>, E. S. Penev, M. Sun, B. I. Yakobson</p>
-              <p class="journal">The Journal of Physical Chemistry Letters (2026) <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">The Journal of Physical Chemistry Letters 17(31), 9031–9037 (2026) <a href="https://pubs.acs.org/doi/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
             </div>
           </li>
           <li class="publication">
