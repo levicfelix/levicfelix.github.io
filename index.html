@@ -23,12 +23,18 @@
         <a class="nav-link is-active" href="#home" data-nav="home" aria-current="page">Home</a>
         <a class="nav-link" href="#research" data-nav="research">Research</a>
         <a class="nav-link" href="#publications" data-nav="publications">Publications</a>
-        <a class="nav-link" href="#awards" data-nav="awards">Awards</a>
+        <a class="nav-link" href="#recognition" data-nav="recognition">Recognition</a>
+        <a class="nav-link" href="#contact" data-nav="contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="main-content">
+  <svg class="svg-definitions" aria-hidden="true">
+    <symbol id="icon-link" viewBox="0 0 24 24">
+      <path d="M10.6 13.4a4.5 4.5 0 0 0 6.36 0l2.12-2.12a4.5 4.5 0 0 0-6.36-6.36l-1.21 1.21M13.4 10.6a4.5 4.5 0 0 0-6.36 0l-2.12 2.12a4.5 4.5 0 0 0 6.36 6.36l1.21-1.21"/>
+    </symbol>
+  </svg>
   <section class="hero" id="home" data-section="home" aria-label="Featured research">
     <div class="carousel" aria-roledescription="carousel" aria-label="Research highlights">
       <div class="carousel-track">
@@ -51,7 +57,7 @@
           <div class="slide-caption">
             <p>
               Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation
-              <span class="slide-citation">The Journal of Physical Chemistry Letters 17(31), 9031–9037, 2026</span>
+              <span class="slide-citation"><em>The Journal of Physical Chemistry Letters</em> <strong>17(31)</strong>, 9031–9037 (2026)</span>
             </p>
           </div>
         </a>
@@ -63,7 +69,7 @@
           <div class="slide-caption">
             <p>
               Ab Initio Molecular Dynamics Insights into Stress Corrosion Cracking and Dissolution of Metal Oxides
-              <span class="slide-citation">Materials 18(3), 538, 2025</span>
+              <span class="slide-citation"><em>Materials</em> <strong>18(3)</strong>, 538 (2025)</span>
             </p>
           </div>
         </a>
@@ -116,9 +122,7 @@
                 </svg>
               </a>
               <a class="profile-link profile-link--cv" href="files/Curriculum_Vitae.pdf" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae" title="Curriculum Vitae">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M5 2.5h9l5 5v14H5v-19Zm8 1.8v4.2h4.2L13 4.3ZM8 12v1.8h2.8V18h2v-4.2H16V12H8Z"/>
-                </svg>
+                <span aria-hidden="true">CV</span>
               </a>
             </div>
           </div>
@@ -151,28 +155,71 @@
     <section class="section section--research" id="research" data-section="research">
       <div class="section-shell">
         <header class="section-heading section-heading--wide">
-          <span class="section-number">02</span>
-          <p class="kicker">Research</p>
-          <h2>Mechanisms across scales</h2>
+          <h2>Research</h2>
         </header>
 
         <article class="research-feature">
           <div class="research-feature__image">
-            <img src="images/ap_topochemistry.jpeg" alt="Ammonium perchlorate sublimation">
-            <span class="image-label">Chemical degradation</span>
+            <div class="research-visual research-visual--mlip" role="img" aria-label="Illustration of a neural-network interatomic potential learning a zirconium carbide lattice with a point defect">
+              <svg viewBox="0 0 720 440" aria-hidden="true">
+                <g class="mlip-bonds">
+                  <path d="M88 92 180 54 272 92 364 54 456 92 548 54 632 96M88 184l92-38 92 38 92-38 92 38 92-38 84 42M88 276l92-38 92 38 92-38 92 38 92-38 84 42M88 368l92-38 92 38 92-38 92 38 92-38 84 42M88 92v276M180 54v276M272 92v276M364 54v276M456 92v276M548 54v276M632 96v276"/>
+                </g>
+                <g class="mlip-atoms">
+                  <circle cx="88" cy="92" r="16"/><circle cx="180" cy="54" r="12"/><circle cx="272" cy="92" r="16"/><circle cx="364" cy="54" r="12"/><circle cx="456" cy="92" r="16"/><circle cx="548" cy="54" r="12"/><circle cx="632" cy="96" r="16"/>
+                  <circle cx="88" cy="184" r="12"/><circle cx="180" cy="146" r="16"/><circle cx="272" cy="184" r="12"/><circle cx="364" cy="146" r="16"/><circle cx="456" cy="184" r="12"/><circle cx="548" cy="146" r="16"/><circle cx="632" cy="188" r="12"/>
+                  <circle cx="88" cy="276" r="16"/><circle cx="180" cy="238" r="12"/><circle cx="272" cy="276" r="16"/><circle class="mlip-defect" cx="364" cy="238" r="24"/><circle cx="456" cy="276" r="16"/><circle cx="548" cy="238" r="12"/><circle cx="632" cy="280" r="16"/>
+                  <circle cx="88" cy="368" r="12"/><circle cx="180" cy="330" r="16"/><circle cx="272" cy="368" r="12"/><circle cx="364" cy="330" r="16"/><circle cx="456" cy="368" r="12"/><circle cx="548" cy="330" r="16"/><circle cx="632" cy="372" r="12"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="research-feature__copy">
+            <h3>Machine Learning Interatomic Potentials</h3>
+            <p>
+              Machine learning interatomic potentials carry first-principles accuracy into the long molecular-dynamics trajectories required for transport calculations. We train a DeepMD potential to reproduce the energetics and forces of point defects in zirconium carbide (ZrC), enabling long-timescale simulations of defect-controlled thermal conductivity through the Green–Kubo formalism at high temperatures.
+            </p>
+            <ul class="reference-list">
+              <li><a href="#pub-zrc">Defect-Controlled Thermal Conductivity of ZrC at High Temperatures from First Principles</a> — C. Zhang<sup>*</sup>, L. C. Felix<sup>*</sup>, and B. I. Yakobson. Submitted (2026).</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-feature research-feature--reverse">
+          <div class="research-feature__image">
+            <div class="research-visual research-visual--placeholder" role="img" aria-label="Placeholder for a future thermal transport figure">
+              <svg viewBox="0 0 720 440" aria-hidden="true">
+                <path class="thermal-wave thermal-wave--one" d="M70 238c70-140 140 140 210 0s140-140 210 0 140 140 180 0"/>
+                <path class="thermal-wave thermal-wave--two" d="M70 202c70-92 140 92 210 0s140-92 210 0 140 92 180 0"/>
+                <path class="thermal-axis" d="M70 322h600m-12-12 12 12-12 12"/>
+              </svg>
+              <p>Thermal transport figure <span>placeholder</span></p>
+            </div>
+          </div>
+          <div class="research-feature__copy">
+            <h3>Thermal Transport</h3>
+            <p>
+              We combine linear response theory with equilibrium and non-equilibrium molecular dynamics to investigate thermal transport in regimes governed by strong anharmonic effects, including ultrahigh temperatures and structures with dynamical defects. These approaches connect heat-current fluctuations and imposed temperature gradients to thermal conductivity over the long trajectories needed to resolve transport accurately.
+            </p>
+            <ul class="reference-list">
+              <li><a href="#pub-zrc">Defect-Controlled Thermal Conductivity of ZrC at High Temperatures from First Principles</a> — Submitted (2026).</li>
+              <li><a href="https://doi.org/10.1016/j.apsusc.2026.167187" target="_blank" rel="noopener noreferrer">Kapitza Resistance and Thermal Transport in Knotted Graphene Nanoribbons</a> — <em>Applied Surface Science</em> <strong>742</strong>, 167187 (2026).</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="research-feature">
+          <div class="research-feature__image">
+            <img src="images/ap_topochemistry.jpeg" alt="Ammonium perchlorate surface morphology and sublimation">
           </div>
           <div class="research-feature__copy">
             <h3>Atomistic Materials Degradation</h3>
             <p>
-              This research aims to connect quantum chemical calculations and transition state theory to identify
-              the rate-limiting steps of many observed chemical degradatin processes, such as water-driven stress corrosion craking
-              and thermal decomposition and sublimation multi-component perchlorate crystals. Additionally, first-principles and
-              density functional tight-binding calculations combined with metadynamics are used to investigate such
-              rare events at the atomic scale.
+              This research connects quantum chemical calculations and transition state theory to identify rate-limiting steps in chemical degradation processes, including water-driven stress corrosion cracking and the thermal decomposition and sublimation of multicomponent perchlorate crystals. First-principles and density functional tight-binding calculations, combined with metadynamics, are used to resolve these rare events at the atomic scale.
             </p>
             <ul class="reference-list">
-              <li>L. C. Felix, E. S. Penev, M. Sun and B. I. Yakobson, <em>The Journal of Physical Chemistry Letters</em>, 17(31), 9031–9037 (2026).</li>
-              <li>L. C. Felix, Q.-K. Li, E. S. Penev, and B. I. Yakobson, <em>Materials</em>, 18(3), 538 (2025).</li>
+              <li><a href="https://doi.org/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer">Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation</a> — <em>The Journal of Physical Chemistry Letters</em> <strong>17(31)</strong>, 9031–9037 (2026).</li>
+              <li><a href="https://doi.org/10.3390/ma18030538" target="_blank" rel="noopener noreferrer">Ab Initio Molecular Dynamics Insights into Stress Corrosion Cracking and Dissolution of Metal Oxides</a> — <em>Materials</em> <strong>18(3)</strong>, 538 (2025).</li>
             </ul>
           </div>
         </article>
@@ -180,24 +227,19 @@
         <article class="research-feature research-feature--reverse">
           <div class="research-feature__image">
             <img src="images/carbon_mechanics.jpg" alt="Mechanical response of carbon nanomaterials">
-            <span class="image-label">Carbon mechanics</span>
           </div>
           <div class="research-feature__copy">
-            <h3>Mechanical Response of Carbon Nanomaterials</h3>
+            <h3>Nanomechanics</h3>
             <p>
-              My earlier research focused on the mechanical response of carbon nanomaterials
-              and architected carbon structures. These studies combined density functional
-              theory, molecular dynamics, and mechanical modeling to understand deformation,
-              fracture, thermal stability, impact response, and energy absorption from the
-              atomistic to the macroscale.
+              My earlier research focused on the mechanical response of carbon nanomaterials and architected carbon structures. These studies combined density functional theory, molecular dynamics, and mechanical modeling to understand deformation, fracture, thermal stability, impact response, and energy absorption from the atomistic to the macroscale.
             </p>
             <ul class="reference-list">
-              <li>L. C. Felix, C. F. Woellner, and D. S. Galvao, <em>Carbon</em>, 157, 670–680 (2020).</li>
-              <li>L. C. Felix, V. Gaál, C. F. Woellner, V. Rodrigues, and D. S. Galvao, <em>MRS Adv.</em>, 5(33–34), 1775–1781 (2020).</li>
-              <li>L. C. Felix, R. M. Tromer, P. A. S. Autreto, L. A. Ribeiro Junior, and D. S. Galvao, <em>J. Phys. Chem. C</em>, 124(27), 14855–14860 (2020).</li>
-              <li>L. C. Felix and D. S. Galvao, <em>Phys. Chem. Chem. Phys.</em>, 24(22), 13905–13910 (2022).</li>
-              <li>L. C. Felix, R. M. Tromer, C. F. Woellner, C. S. Tiwary, and D. S. Galvao, <em>Physica B Condens. Matter</em>, 629, 413576 (2022).</li>
-              <li>L. C. Felix, R. S. Ambekar, C. F. Woellner, B. Kushwaha, V. Pal, C. S. Tiwary, and D. S. Galvao, <em>J. Phys. D: Appl. Phys.</em>, 55(46), 465301 (2022).</li>
+              <li><a href="https://doi.org/10.1016/j.carbon.2019.10.066" target="_blank" rel="noopener noreferrer">Mechanical and Energy-Absorption Properties of Schwarzites</a> — <em>Carbon</em> <strong>157</strong>, 670–680 (2020).</li>
+              <li><a href="https://doi.org/10.1557/adv.2020.175" target="_blank" rel="noopener noreferrer">Mechanical Properties of Diamond Schwarzites: From Atomistic Models to 3D-Printed Structures</a> — <em>MRS Advances</em> <strong>5(33–34)</strong>, 1775–1781 (2020).</li>
+              <li><a href="https://doi.org/10.1021/acs.jpcc.0c02999" target="_blank" rel="noopener noreferrer">On the Mechanical Properties and Thermal Stability of a Recently Synthesized Monolayer Amorphous Carbon</a> — <em>The Journal of Physical Chemistry C</em> <strong>124(27)</strong>, 14855–14860 (2020).</li>
+              <li><a href="https://doi.org/10.1039/D2CP01207C" target="_blank" rel="noopener noreferrer">Guided Fractures in Graphene Mechanical Diode-Like Structures</a> — <em>Physical Chemistry Chemical Physics</em> <strong>24(22)</strong>, 13905–13910 (2022).</li>
+              <li><a href="https://doi.org/10.1016/j.physb.2021.413576" target="_blank" rel="noopener noreferrer">Mechanical Response of Pentadiamond: A DFT and Molecular Dynamics Study</a> — <em>Physica B: Condensed Matter</em> <strong>629</strong>, 413576 (2022).</li>
+              <li><a href="https://doi.org/10.1088/1361-6463/ac91dc" target="_blank" rel="noopener noreferrer">Mechanical Properties of 3D-Printed Pentadiamond</a> — <em>Journal of Physics D: Applied Physics</em> <strong>55(46)</strong>, 465301 (2022).</li>
             </ul>
           </div>
         </article>
@@ -207,11 +249,7 @@
     <section class="section section--publications" id="publications" data-section="publications">
       <div class="section-shell">
         <header class="section-heading section-heading--publications">
-          <div>
-            <span class="section-number">03</span>
-            <p class="kicker">Publications</p>
-            <h2>Selected work</h2>
-          </div>
+          <h2>Publications</h2>
           <a class="button-link" href="https://scholar.google.com/citations?hl=en&amp;user=JUf7yesAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener noreferrer">
             Google Scholar <span aria-hidden="true">&#8599;</span>
           </a>
@@ -221,17 +259,61 @@
           <li class="publication">
             <span class="publication-year">2026</span>
             <div>
-              <h3>Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation</h3>
-              <p class="authors"><strong>L. C. Felix</strong>, E. S. Penev, M. Sun, B. I. Yakobson</p>
-              <p class="journal">The Journal of Physical Chemistry Letters 17(31), 9031–9037 (2026) <a href="https://pubs.acs.org/doi/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <div class="publication-heading">
+                <h3>Synthesis of Ultralow-Work-Function Bilayer Borophene on Iridium</h3>
+                <a class="doi-link" href="https://doi.org/10.1021/acs.nanolett.6c03673" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-link"></use></svg>DOI</a>
+              </div>
+              <p class="authors">H. Li, A. Tsui, <strong>L. C. Felix</strong>, F. Sun, C. Lamarca, B. I. Yakobson, M. C. Hersam</p>
+              <p class="journal"><em>Nano Letters</em> <strong>26(39)</strong>, 13536–13542 (2026)</p>
             </div>
           </li>
           <li class="publication">
             <span class="publication-year">2026</span>
             <div>
-              <h3>Kapitza resistance and thermal transport in knotted graphene nanoribbons</h3>
+              <div class="publication-heading">
+                <h3>CompMat-Bench: Benchmarking AI Agents for Computational Materials Science</h3>
+                <a class="doi-link" href="https://arxiv.org/abs/2610.00636" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-link"></use></svg>ARXIV</a>
+              </div>
+              <p class="authors">C. Zhang, <strong>L. Felix</strong>, J.-J. Zhang, X. Li, X. Jiang, T. Jiang, S. Mishra, X. Qin, B. I. Yakobson</p>
+              <p class="journal"><em>arXiv preprint</em> <strong>arXiv:2610.00636</strong> (2026)</p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2026</span>
+            <div>
+              <div class="publication-heading">
+                <h3>Composition-Tunable Optoelectronic Properties of Gyroid Schwarzites: A First-Principles Materials Design Study</h3>
+                <a class="doi-link" href="https://doi.org/10.1039/D6CP01000H" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-link"></use></svg>DOI</a>
+              </div>
+              <p class="authors">J. de Lima, R. M. Tromer, <strong>L. C. Felix</strong>, D. S. Galvao, C. F. Woellner</p>
+              <p class="journal"><em>Physical Chemistry Chemical Physics</em> <strong>28(31)</strong>, 19028–19037 (2026)</p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>Topochemistry of Ammonium Perchlorate: How Surface Morphology Mediates Its Sublimation</h3>
+              <p class="authors"><strong>L. C. Felix</strong>, E. S. Penev, M. Sun, B. I. Yakobson</p>
+              <p class="journal">The Journal of Physical Chemistry Letters 17(31), 9031–9037 (2026) <a href="https://pubs.acs.org/doi/10.1021/acs.jpclett.6c01896" target="_blank" rel="noopener noreferrer">DOI</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>Kapitza Resistance and Thermal Transport in Knotted Graphene Nanoribbons</h3>
               <p class="authors"><strong>L. C. Felix</strong>, M. L. Pereira Junior, G. S. L. Fabris, A. F. F., D. S. Galvão</p>
-              <p class="journal">Applied Surface Science 742, 167187 (2026) <a href="https://doi.org/10.1016/j.apsusc.2026.167187" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Applied Surface Science 742, 167187 (2026) <a href="https://doi.org/10.1016/j.apsusc.2026.167187" target="_blank" rel="noopener noreferrer">DOI</a></p>
+            </div>
+          </li>
+          <li class="publication" id="pub-zrc">
+            <span class="publication-year">2026</span>
+            <div>
+              <div class="publication-heading">
+                <h3>Defect-Controlled Thermal Conductivity of ZrC at High Temperatures from First Principles</h3>
+                <span class="publication-status">Submitted</span>
+              </div>
+              <p class="authors">C. Zhang<sup>*</sup>, <strong>L. C. Felix<sup>*</sup></strong>, B. I. Yakobson</p>
+              <p class="journal"><em>Submitted</em> (2026)</p>
             </div>
           </li>
           <li class="publication">
@@ -239,7 +321,7 @@
             <div>
               <h3>Schwarzites and triply periodic minimal surfaces: from pure topology mathematics to macroscale applications</h3>
               <p class="authors"><strong>L. C. Felix</strong>, R. Ambekar, R. M. Tromer, C. F. Woellner, V. Rodrigues, P. M. Ajayan, ...</p>
-              <p class="journal">Small 21(28), 2400351 (2025) <a href="https://doi.org/10.1002/smll.202400351" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Small 21(28), 2400351 (2025) <a href="https://doi.org/10.1002/smll.202400351" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -247,7 +329,7 @@
             <div>
               <h3>Ab Initio Molecular Dynamics Insights into Stress Corrosion Cracking and Dissolution of Metal Oxides</h3>
               <p class="authors"><strong>L. C. Felix</strong>, Q. K. Li, E. S. Penev, B. I. Yakobson</p>
-              <p class="journal">Materials 18(3), 538 (2025) <a href="https://doi.org/10.3390/ma18030538" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Materials 18(3), 538 (2025) <a href="https://doi.org/10.3390/ma18030538" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -255,7 +337,7 @@
             <div>
               <h3>Transforming Two-Dimensional Carbon Allotropes into Three-Dimensional Ones through Topological Mapping: The Case of Biphenylene Carbon (Graphenylene)</h3>
               <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, R. H. Baughmann, D. S. Galvao, C. F. Woellner</p>
-              <p class="journal">The Journal of Physical Chemistry A 128(35), 7346-7352 (2024) <a href="https://doi.org/10.1021/acs.jpca.4c01339" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">The Journal of Physical Chemistry A 128(35), 7346-7352 (2024) <a href="https://doi.org/10.1021/acs.jpca.4c01339" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -263,7 +345,7 @@
             <div>
               <h3>Atomic-resolution vibrational mapping of bilayer borophene</h3>
               <p class="authors">H. Li, <strong>L. C. Felix</strong>, Q. Li, Q. Ruan, B. I. Yakobson, M. C. Hersam</p>
-              <p class="journal">Nano Letters 24(34), 10674-10680 (2024) <a href="https://doi.org/10.1021/acs.nanolett.4c03224" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Nano Letters 24(34), 10674-10680 (2024) <a href="https://doi.org/10.1021/acs.nanolett.4c03224" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -271,7 +353,7 @@
             <div>
               <h3>Hydrogen atom/molecule adsorption on 2D metallic porphyrin: A first-principles study</h3>
               <p class="authors">R. M. Tromer, I. M. Felix, <strong>L. C. Felix</strong>, L. D. Machado, C. F. Woellner, D. S. Galvao</p>
-              <p class="journal">Chemical Physics 577, 112142 (2024) <a href="https://doi.org/10.1016/j.chemphys.2023.112142" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Chemical Physics 577, 112142 (2024) <a href="https://doi.org/10.1016/j.chemphys.2023.112142" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -279,7 +361,7 @@
             <div>
               <h3>Influence of cluster sources on the growth mechanisms and chemical composition of bimetallic nanoparticles</h3>
               <p class="authors">M. Moreira, <strong>L. C. Felix</strong>, E. Cottancin, M. Pellarin, D. Ugarte, M. Hillenkamp, ...</p>
-              <p class="journal">The Journal of Physical Chemistry C 127(4), 1944-1954 (2023) <a href="https://doi.org/10.1021/acs.jpcc.2c08044" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">The Journal of Physical Chemistry C 127(4), 1944-1954 (2023) <a href="https://doi.org/10.1021/acs.jpcc.2c08044" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -287,7 +369,7 @@
             <div>
               <h3>The role of the extrafibrillar volume on the mechanical properties of molecular models of mineralized bone microfibrils</h3>
               <p class="authors">A. C. S. de Alcântara, <strong>L. C. Felix</strong>, D. S. Galvao, P. Sollero, M. S. Skaf</p>
-              <p class="journal">ACS Biomaterials Science &amp; Engineering 9(1), 230-245 (2022) <a href="https://doi.org/10.1021/acsbiomaterials.2c00728" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">ACS Biomaterials Science &amp; Engineering 9(1), 230-245 (2022) <a href="https://doi.org/10.1021/acsbiomaterials.2c00728" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -295,7 +377,7 @@
             <div>
               <h3>Mechanical properties of 3D-printed pentadiamond</h3>
               <p class="authors"><strong>L. C. Felix</strong>, R. S. Ambekar, C. F. Woellner, B. Kushwaha, V. Pal, C. S. Tiwary, ...</p>
-              <p class="journal">Journal of Physics D: Applied Physics 55(46), 465301 (2022) <a href="https://iopscience.iop.org/article/10.1088/1361-6463/ac91dc/meta" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Journal of Physics D: Applied Physics 55(46), 465301 (2022) <a href="https://iopscience.iop.org/article/10.1088/1361-6463/ac91dc/meta" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -303,7 +385,7 @@
             <div>
               <h3>Devising bone molecular models at the nanoscale: from usual mineralized collagen fibrils to the first bone fibers including hydroxyapatite in the extra-fibrillar volume</h3>
               <p class="authors">A. C. S. Alcântara, <strong>L. C. Felix</strong>, D. S. Galvão, P. Sollero, M. S. Skaf</p>
-              <p class="journal">Materials 15(6), 2274 (2022) <a href="https://doi.org/10.3390/ma15062274" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Materials 15(6), 2274 (2022) <a href="https://doi.org/10.3390/ma15062274" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -311,7 +393,7 @@
             <div>
               <h3>Mechanical response of pentadiamond: A DFT and molecular dynamics study</h3>
               <p class="authors"><strong>L. C. Felix</strong>, R. M. Tromer, C. F. Woellner, C. S. Tiwary, D. S. Galvao</p>
-              <p class="journal">Physica B: Condensed Matter 629, 413576 (2022) <a href="https://doi.org/10.1016/j.physb.2021.413576" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Physica B: Condensed Matter 629, 413576 (2022) <a href="https://doi.org/10.1016/j.physb.2021.413576" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -319,7 +401,7 @@
             <div>
               <h3>Mechanical properties of 3D printed macroscopic models of schwarzites</h3>
               <p class="authors">V. Gaal, <strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao, C. S. Tiwary, M. A. d'Ávila, ...</p>
-              <p class="journal">Nano Select 3(2), 450-458 (2022) <a href="https://doi.org/10.1002/nano.202100147" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Nano Select 3(2), 450-458 (2022) <a href="https://doi.org/10.1002/nano.202100147" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -327,7 +409,7 @@
             <div>
               <h3>Guided fractures in graphene mechanical diode-like structures</h3>
               <p class="authors"><strong>L. C. Felix</strong>, D. S. Galvao</p>
-              <p class="journal">Physical Chemistry Chemical Physics 24(22), 13905-13910 (2022) <a href="https://doi.org/10.1039/D2CP01207C" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Physical Chemistry Chemical Physics 24(22), 13905-13910 (2022) <a href="https://doi.org/10.1039/D2CP01207C" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -335,7 +417,7 @@
             <div>
               <h3>Optoelectronic properties of amorphous carbon-based nanotube and nanoscroll</h3>
               <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, L. A. Ribeiro, D. S. Galvao</p>
-              <p class="journal">Physica E: Low-dimensional Systems and Nanostructures 130, 114683 (2021) <a href="https://doi.org/10.1016/j.physe.2021.114683" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Physica E: Low-dimensional Systems and Nanostructures 130, 114683 (2021) <a href="https://doi.org/10.1016/j.physe.2021.114683" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -343,7 +425,7 @@
             <div>
               <h3>A DFT investigation of the electronic, optical, and thermoelectric properties of pentadiamond</h3>
               <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao</p>
-              <p class="journal">Chemical Physics Letters 763, 138210 (2021) <a href="https://doi.org/10.1016/j.cplett.2020.138210" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Chemical Physics Letters 763, 138210 (2021) <a href="https://doi.org/10.1016/j.cplett.2020.138210" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -351,7 +433,7 @@
             <div>
               <h3>Electronic and transport properties of anisotropic semiconductor quantum wires</h3>
               <p class="authors">S. M. Cunha, D. R. da Costa, <strong>L. C. Felix</strong>, A. Chaves, J. M. Pereira Jr</p>
-              <p class="journal">Physical Review B 102(4), 045427 (2020) <a href="https://doi.org/10.1103/PhysRevB.102.045427" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Physical Review B 102(4), 045427 (2020) <a href="https://doi.org/10.1103/PhysRevB.102.045427" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -359,7 +441,7 @@
             <div>
               <h3>On the mechanical properties and thermal stability of a recently synthesized monolayer amorphous carbon</h3>
               <p class="authors"><strong>L. C. Felix</strong>, R. M. Tromer, P. A. S. Autreto, L. A. Ribeiro Junior, D. S. Galvao</p>
-              <p class="journal">The Journal of Physical Chemistry C 124(27), 14855-14860 (2020) <a href="https://doi.org/10.1021/acs.jpcc.0c02999" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">The Journal of Physical Chemistry C 124(27), 14855-14860 (2020) <a href="https://doi.org/10.1021/acs.jpcc.0c02999" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -367,7 +449,7 @@
             <div>
               <h3>On the structural stability and optical properties of germanium-based schwarzites: a density functional theory investigation</h3>
               <p class="authors">R. M. Tromer, <strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao</p>
-              <p class="journal">Physical Chemistry Chemical Physics 22(28), 16286-16293 (2020) <a href="https://doi.org/10.1039/D0CP02143A" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Physical Chemistry Chemical Physics 22(28), 16286-16293 (2020) <a href="https://doi.org/10.1039/D0CP02143A" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -375,7 +457,7 @@
             <div>
               <h3>Mechanical properties of diamond schwarzites: from atomistic models to 3D-printed structures</h3>
               <p class="authors"><strong>L. C. Felix</strong>, V. Gaál, C. F. Woellner, V. Rodrigues, D. S. Galvao</p>
-              <p class="journal">MRS Advances 5(33-34), 1775-1781 (2020) <a href="https://doi.org/10.1557/adv.2020.175" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">MRS Advances 5(33-34), 1775-1781 (2020) <a href="https://doi.org/10.1557/adv.2020.175" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
           <li class="publication">
@@ -383,18 +465,16 @@
             <div>
               <h3>Mechanical and energy-absorption properties of schwarzites</h3>
               <p class="authors"><strong>L. C. Felix</strong>, C. F. Woellner, D. S. Galvao</p>
-              <p class="journal">Carbon 157, 670-680 (2020) <a href="https://doi.org/10.1016/j.carbon.2019.10.066" target="_blank" rel="noopener noreferrer">View publication <span aria-hidden="true">&#8599;</span></a></p>
+              <p class="journal">Carbon 157, 670-680 (2020) <a href="https://doi.org/10.1016/j.carbon.2019.10.066" target="_blank" rel="noopener noreferrer">DOI</a></p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="section section--awards" id="awards" data-section="awards">
-      <div class="section-shell awards-layout">
-        <header class="section-heading">
-          <span class="section-number">04</span>
-          <p class="kicker">Awards</p>
+    <section class="section section--recognition" id="recognition" data-section="recognition">
+      <div class="section-shell">
+        <header class="section-heading section-heading--wide">
           <h2>Recognition</h2>
         </header>
 
@@ -414,11 +494,31 @@
         </ol>
       </div>
     </section>
+
+    <section class="section section--contact" id="contact" data-section="contact">
+      <div class="section-shell contact-layout">
+        <div class="contact-intro">
+          <h2>Contact Me</h2>
+          <p>For research discussions, collaborations, or other inquiries, write a message below. Submitting the form opens your email application with the message prepared for <a href="mailto:levifelix1@gmail.com">levifelix1@gmail.com</a>.</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="contact-email">Your email</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+          <label for="contact-subject">Subject</label>
+          <input id="contact-subject" name="subject" type="text" placeholder="Subject" required>
+
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="7" placeholder="Write your message" required></textarea>
+
+          <button type="submit">Compose email <span aria-hidden="true">&#8599;</span></button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="section-shell footer-inner">
-      <p>Levi Felix</p>
       <a href="#home">Back to top <span aria-hidden="true">&#8593;</span></a>
     </div>
   </footer>
