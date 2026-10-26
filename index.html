@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261025-section-titles">
+  <link rel="stylesheet" href="styles.css?v=20261026-research-images">
   <script src="script.js?v=20261025-contact-subject" defer></script>
 </head>
 <body>
@@ -39,8 +39,8 @@
     <div class="carousel" aria-roledescription="carousel" aria-label="Research highlights">
       <div class="carousel-track">
         <a class="slide is-active" data-slide="0" href="#research" aria-label="Go to the Research section" aria-hidden="false">
-          <div class="slide-backdrop" style="background-image: url('images/1.fracture.png')" aria-hidden="true"></div>
-          <img src="images/1.fracture.png" alt="Atomistic model illustrating fracture in a carbon structure">
+          <div class="slide-backdrop" style="background-image: url('images/1.research.png')" aria-hidden="true"></div>
+          <img src="images/1.research.png" alt="Overview of theoretical and computational materials science research interests">
           <div class="slide-shade"></div>
           <div class="slide-caption">
             <p>
@@ -83,7 +83,7 @@
       </button>
 
       <div class="carousel-dots" role="group" aria-label="Choose a featured image">
-        <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Show fracture image" aria-current="true"></button>
+        <button class="carousel-dot is-active" type="button" data-slide-to="0" aria-label="Show research interests image" aria-current="true"></button>
         <button class="carousel-dot" type="button" data-slide-to="1" aria-label="Show sublimation publication"></button>
         <button class="carousel-dot" type="button" data-slide-to="2" aria-label="Show dissolution publication"></button>
       </div>
@@ -160,19 +160,7 @@
 
         <article class="research-feature">
           <div class="research-feature__image">
-            <div class="research-visual research-visual--mlip" role="img" aria-label="Illustration of a neural-network interatomic potential learning a zirconium carbide lattice with a point defect">
-              <svg viewBox="0 0 720 440" aria-hidden="true">
-                <g class="mlip-bonds">
-                  <path d="M88 92 180 54 272 92 364 54 456 92 548 54 632 96M88 184l92-38 92 38 92-38 92 38 92-38 84 42M88 276l92-38 92 38 92-38 92 38 92-38 84 42M88 368l92-38 92 38 92-38 92 38 92-38 84 42M88 92v276M180 54v276M272 92v276M364 54v276M456 92v276M548 54v276M632 96v276"/>
-                </g>
-                <g class="mlip-atoms">
-                  <circle cx="88" cy="92" r="16"/><circle cx="180" cy="54" r="12"/><circle cx="272" cy="92" r="16"/><circle cx="364" cy="54" r="12"/><circle cx="456" cy="92" r="16"/><circle cx="548" cy="54" r="12"/><circle cx="632" cy="96" r="16"/>
-                  <circle cx="88" cy="184" r="12"/><circle cx="180" cy="146" r="16"/><circle cx="272" cy="184" r="12"/><circle cx="364" cy="146" r="16"/><circle cx="456" cy="184" r="12"/><circle cx="548" cy="146" r="16"/><circle cx="632" cy="188" r="12"/>
-                  <circle cx="88" cy="276" r="16"/><circle cx="180" cy="238" r="12"/><circle cx="272" cy="276" r="16"/><circle class="mlip-defect" cx="364" cy="238" r="24"/><circle cx="456" cy="276" r="16"/><circle cx="548" cy="238" r="12"/><circle cx="632" cy="280" r="16"/>
-                  <circle cx="88" cy="368" r="12"/><circle cx="180" cy="330" r="16"/><circle cx="272" cy="368" r="12"/><circle cx="364" cy="330" r="16"/><circle cx="456" cy="368" r="12"/><circle cx="548" cy="330" r="16"/><circle cx="632" cy="372" r="12"/>
-                </g>
-              </svg>
-            </div>
+            <img src="images/mlip.png" alt="Machine learning interatomic potential workflow for zirconium carbide">
           </div>
           <div class="research-feature__copy">
             <h3>Machine Learning Interatomic Potentials</h3>
@@ -187,14 +175,7 @@
 
         <article class="research-feature research-feature--reverse">
           <div class="research-feature__image">
-            <div class="research-visual research-visual--placeholder" role="img" aria-label="Placeholder for a future thermal transport figure">
-              <svg viewBox="0 0 720 440" aria-hidden="true">
-                <path class="thermal-wave thermal-wave--one" d="M70 238c70-140 140 140 210 0s140-140 210 0 140 140 180 0"/>
-                <path class="thermal-wave thermal-wave--two" d="M70 202c70-92 140 92 210 0s140-92 210 0 140 92 180 0"/>
-                <path class="thermal-axis" d="M70 322h600m-12-12 12 12-12 12"/>
-              </svg>
-              <p>Thermal transport figure <span>placeholder</span></p>
-            </div>
+            <img src="images/kappa.png" alt="Thermal transport calculations and conductivity trends">
           </div>
           <div class="research-feature__copy">
             <h3>Thermal Transport</h3>
@@ -226,12 +207,12 @@
 
         <article class="research-feature research-feature--reverse">
           <div class="research-feature__image">
-            <img src="images/carbon_mechanics.jpg" alt="Mechanical response of carbon nanomaterials">
+            <img src="images/nanomechanics.png" alt="Mechanical response of carbon nanomaterials and architected carbon structures">
           </div>
           <div class="research-feature__copy">
             <h3>Nanomechanics</h3>
             <p>
-              My earlier research focused on the mechanical response of carbon nanomaterials and architected carbon structures. These studies combined density functional theory, molecular dynamics, and mechanical modeling to understand deformation, fracture, thermal stability, impact response, and energy absorption from the atomistic to the macroscale.
+              My earlier research focused on the mechanical response of carbon nanomaterials and architected carbon structures, combining density functional theory, molecular dynamics, and mechanical modeling to understand deformation from the atomistic to 3D-printed architectures as a macroscale surrogate models.
             </p>
             <ul class="reference-list">
               <li><a href="https://doi.org/10.1016/j.carbon.2019.10.066" target="_blank" rel="noopener noreferrer">Mechanical and Energy-Absorption Properties of Schwarzites</a> — <em>Carbon</em> <strong>157</strong>, 670–680 (2020).</li>

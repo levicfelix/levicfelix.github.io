@@ -663,9 +663,10 @@ a {
 }
 
 .research-feature__image img {
+  display: block;
   width: 100%;
-  min-height: 360px;
-  object-fit: cover;
+  height: auto;
+  min-height: 0;
 }
 
 .research-visual {
@@ -1152,10 +1153,6 @@ a {
 
   .research-feature--reverse .research-feature__image {
     order: 0;
-  }
-
-  .research-feature__image img {
-    min-height: 280px;
   }
 
   .research-visual,
