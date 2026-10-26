@@ -109,9 +109,9 @@ a {
 
 .hero,
 .carousel {
-  height: 50svh;
-  min-height: 360px;
-  max-height: 560px;
+  height: 44svh;
+  min-height: 320px;
+  max-height: 500px;
 }
 
 .carousel {
@@ -503,11 +503,11 @@ a {
 }
 
 .profile-card img {
-  width: 227px;
+  width: 152px;
   height: auto;
-  border: 4px solid rgba(255, 255, 255, 0.88);
-  border-radius: 12px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.42);
+  border: 3px solid rgba(255, 255, 255, 0.88);
+  border-radius: 8px;
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.42);
   object-fit: cover;
   filter: grayscale(8%);
 }
@@ -1091,7 +1091,6 @@ a {
   transform: none;
 }
 
-.contact-form__note,
 .contact-form__status {
   margin: 0 0 1rem;
   color: var(--muted);
