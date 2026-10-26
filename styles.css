@@ -907,6 +907,12 @@ a {
   font-weight: 600;
 }
 
+.contribution-note {
+  color: #858d99;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
 .journal {
   color: #858d99;
   font-size: 0.9rem;
