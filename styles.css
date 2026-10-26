@@ -408,7 +408,7 @@ a {
 .section h2 {
   margin: 0;
   font-family: var(--heading);
-  font-size: clamp(2.35rem, 5vw, 5rem);
+  font-size: clamp(1.175rem, 2.5vw, 2.5rem);
   font-weight: 500;
   line-height: 1.08;
   letter-spacing: -0.035em;
