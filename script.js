@@ -152,7 +152,6 @@
 
   const contactForm = document.querySelector("#contact-form");
   const contactStatus = document.querySelector("#contact-status");
-  const deliverySubject = document.querySelector("#contact-delivery-subject");
   const contactButton = contactForm?.querySelector('button[type="submit"]');
   const pageUrl = new URL(window.location.href);
 
@@ -164,13 +163,6 @@
   }
 
   contactForm?.addEventListener("submit", () => {
-    const formData = new FormData(contactForm);
-    const subject = String(formData.get("subject") || "").trim();
-
-    if (deliverySubject) {
-      deliverySubject.value = subject || "New website message";
-    }
-
     if (contactStatus) {
       contactStatus.textContent = "Sending your message securely…";
       contactStatus.hidden = false;
