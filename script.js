@@ -151,14 +151,34 @@
   });
 
   const contactForm = document.querySelector("#contact-form");
+  const contactStatus = document.querySelector("#contact-status");
+  const deliverySubject = document.querySelector("#contact-delivery-subject");
+  const contactButton = contactForm?.querySelector('button[type="submit"]');
+  const pageUrl = new URL(window.location.href);
 
-  contactForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
+  if (pageUrl.searchParams.get("message") === "sent" && contactStatus) {
+    contactStatus.textContent = "Your message was sent. A copy has been emailed to you.";
+    contactStatus.hidden = false;
+    pageUrl.searchParams.delete("message");
+    window.history.replaceState({}, "", `${pageUrl.pathname}${pageUrl.search}${pageUrl.hash}`);
+  }
+
+  contactForm?.addEventListener("submit", () => {
     const formData = new FormData(contactForm);
-    const email = String(formData.get("email") || "").trim();
     const subject = String(formData.get("subject") || "").trim();
-    const message = String(formData.get("message") || "").trim();
-    const body = `From: ${email}\n\n${message}`;
-    window.location.href = `mailto:levifelix1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    if (deliverySubject) {
+      deliverySubject.value = subject || "New website message";
+    }
+
+    if (contactStatus) {
+      contactStatus.textContent = "Sending your message securely…";
+      contactStatus.hidden = false;
+    }
+
+    if (contactButton) {
+      contactButton.disabled = true;
+      contactButton.textContent = "Sending…";
+    }
   });
 })();
