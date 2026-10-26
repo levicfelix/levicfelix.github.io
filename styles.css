@@ -874,6 +874,8 @@ a {
 
 .publication-year {
   padding-top: 0.28rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
 }
 
 .publication-heading {
